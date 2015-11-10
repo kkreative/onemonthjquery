@@ -7,21 +7,43 @@
         <title>Summer Vacation</title>
         <!-- CSS -->
         <link href="styles.css" rel="stylesheet">
+        <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <header>
                 <span>—  My Trip to  —</span>
-                <h1>The Golden State</h1>
+                <h1>Dominican Republic</h1>
             </header>
             <!-- Thumbnail Images -->
-            <img src="assets/thumbnails/thumb1.jpg" alt="Surfing"/>
-            <img src="assets/thumbnails/thumb2.jpg" alt="Lifeguard Stand"/>
-            <img src="assets/thumbnails/thumb3.jpg" alt="Hot Air Balloon"/>
-            <img src="assets/thumbnails/thumb4.jpg" alt="Field Freedom"/>
-            <img src="assets/thumbnails/thumb5.jpg" alt="Golden Gate Bridge"/>
-            <img src="assets/thumbnails/thumb6.jpg" alt="Pacific Ocean Sunset"/>
+            <a href="assets/images/image1.jpg" data-lightbox="RoadTrip" data-title="My Caption">
+                <img src="assets/thumbnails/thumb1.jpg" alt="Surfing"/>
+            </a>
+            <a href="assets/images/image2.jpg" data-lightbox="RoadTrip" data-title="My Caption">
+                <img src="assets/thumbnails/thumb2.jpg" alt="Lifeguard Stand"/>
+            </a>
+            <a href="assets/images/image3.jpg" data-lightbox="RoadTrip" data-title="My Caption">
+                <img src="assets/thumbnails/thumb3.jpg" alt="Hot Air Balloon"/>
+            </a>
+            <a href="assets/images/image4.jpg" data-lightbox="RoadTrip" data-title="My Caption">
+                <img src="assets/thumbnails/thumb4.jpg" alt="Field Freedom"/>
+            </a>
+            <a href="assets/images/image5.jpg" data-lightbox="RoadTrip" data-title="My Caption">
+                <img src="assets/thumbnails/thumb5.jpg" alt="Golden Gate Bridge"/>
+            </a>
+            <a href="assets/images/image6.jpg" data-lightbox="RoadTrip" data-title="My Caption">
+                <img src="assets/thumbnails/thumb6.jpg" alt="Pacific Ocean Sunset"/>
+            </a>
         </div>
         <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="lightbox2-master/dist/js/lightbox.js"></script>
+        <script>
+            lightbox.option({
+            'positionFromTop': ,
+            'fitImagesInViewport': true,
+            'wrapAround': false,
+            })
+        </script>
     </body>
 </html>
